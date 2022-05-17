@@ -1,17 +1,17 @@
-//untils
-@import "./untils/variables.scss";
+// импорт общих стилей, переменных
+@import "common/*.scss";
 
-// mixins
-@import "./mixins/media.scss";
-@import "./mixins/states.scss";
-@import "./mixins/textStyles.scss";
+// импорт стилей статичных блоков на подобие header и footer
+@import "../template/**/style.scss";
 
-// common
-@import "./common/global.scss";
-@import "./common/footer.scss";
-@import "./common/header.scss";
-@import "./common/fonts.scss";
+// импорт стилей компонентов
+@import "../components/**/style.scss";
 
-//pages
+// импорт миксинов
+@import "../mixins/**/style.scss";
 
+// импорт стилей секций
+@import "../sections/**/style.scss";
 
+// испорт шрифтов
+@import "../base/fonts/fonts.scss";
