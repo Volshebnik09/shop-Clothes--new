@@ -1,3 +1,6 @@
+// испорт шрифтов
+@import "../base/fonts/fonts.scss";
+
 // импорт общих стилей, переменных
 @import "common/*.scss";
 
@@ -13,5 +16,4 @@
 // импорт стилей секций
 @import "../sections/**/style.scss";
 
-// испорт шрифтов
-@import "../base/fonts/fonts.scss";
+
