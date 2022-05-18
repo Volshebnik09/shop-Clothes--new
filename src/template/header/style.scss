@@ -5,3 +5,36 @@
   padding-top: 44px;
   padding-bottom: 45px;
 }
+.header__search {
+  margin-right: 20px;
+  margin-left: 20px;
+  z-index: 100;
+  position:absolute;
+  right: 230px;
+}
+.header__right-side{
+  display: flex;
+  position: relative;
+}
+@media (max-width: 1300px) {
+  .header__container{
+    padding-top: 22px;
+    padding-bottom: 23px;
+  }
+  .header__logo svg{
+    width: 100%
+  }
+  .header__logo {
+    max-width: 400px;
+    min-width: 200px;
+  }
+}
+@media (max-width: 1000px){
+  .header__search .search__input{
+    width: 0px;
+    margin-left: 0px;
+  }
+  .header__search.active .search__input{
+      width:200px;
+  }
+}

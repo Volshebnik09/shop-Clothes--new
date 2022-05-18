@@ -42,9 +42,28 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	var animateHeader = __webpack_require__(1);
+
+	animateHeader(document.querySelector('.header__search'));
+	console.log('123')
+
+/***/ }),
+/* 1 */
 /***/ (function(module, exports) {
 
-	
+	module.exports = function addEventsOnSearch(el){
+		el.addEventListener('click',(e) => {
+			e.stopPropagation();
+			e.preventDefault();
+			el.classList.add('active')
+		});
+		document.addEventListener('click',()=>{
+			el.classList.remove('active')
+		})
+	}
+
 
 /***/ })
 /******/ ]);
