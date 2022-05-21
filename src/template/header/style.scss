@@ -34,7 +34,7 @@
     font-weight: 800;
     font-size: 18px;
     line-height: 105.5%;
-    margin-top: 50px;
+    margin-top: 10px;
     a{
       color: black;
     }
@@ -73,7 +73,7 @@
     }
     > div > nav > ul > li > .header__subul{
       position: absolute;
-      top:120%;
+      top:124%;
       padding: 0;
       width: 100%;
       max-height: 0px;
@@ -112,7 +112,9 @@
 
 
 
-
+.header__popup-menu {
+  display: none;
+}
 
   @media (max-width: 1300px) {
     .header__top{
@@ -131,6 +133,9 @@
     .header__search .search__input{
       width: 0px;
       margin-left: 0px;
+    }
+    .header__popup-menu {
+      display: block;
     }
     .header__search.active .search__input{
       width:200px;
