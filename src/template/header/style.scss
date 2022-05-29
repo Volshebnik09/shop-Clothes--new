@@ -73,17 +73,18 @@
     }
     > div > nav > ul > li > .header__subul{
       position: absolute;
-      top:124%;
+      top: 100%;
       padding: 0;
       width: 100%;
       max-height: 0px;
       height: auto;
-      transition: 0.6s;
+      transition: 0.2s;
       overflow: hidden;
     }
     li:hover > .header__subul {
+      top:112%;
       max-height: 400px;
-      transition: 1s;
+      transition: 0.2s;
 
     }
     .header__subul > li {
