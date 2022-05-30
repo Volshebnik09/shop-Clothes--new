@@ -132,7 +132,15 @@
 @media (max-width: 768px){
   .main__prescreen{
     min-width: 480px;
+    .main__prescreen__bg-white{
+      z-index: 10;
+      position: absolute;
+      width: 100%;
+      height: 48%;
+      bottom: -246px;
+    }
     .container{
+      padding-bottom: 528px;
       .main__prescreen__girls{
         transform: scale(0.8);
         right: -25%;
@@ -153,8 +161,8 @@
         color: #272525;
       }
       .main__prescreen__benefits{
-        position: relative;
-        transform: translateX(-30%);
+        z-index: 11;
+        position: absolute;
         flex-direction: column;
         justify-content: flex-end;
       }
