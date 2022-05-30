@@ -11,6 +11,7 @@ const rename = require('gulp-rename');
 const minify = require('gulp-minify');
 
 var webpackCFG = require('../webpack.config.js');
+const webpackStream = require("webpack-stream");
 
 console.log(webpackCFG)
 function buildPug (cb) {
@@ -48,10 +49,15 @@ function transformPicture() {
 }
 
 function buildJS() {
-    return src(path.srcPath)
-    .pipe(webpack(webpackCFG))
-    .pipe(minify())
-    .pipe(dest(path.buildPath + '/'));
+    return src('../src/pages/**/*.js')
+        .pipe(webpackStream(
+            require('../webpack.config.js')
+        ))
+        .on('error', function (err) {
+            console.error('WEBPACK ERROR', err);
+            this.emit('end'); // Don't stop the rest of the task
+        })
+        .pipe(dest(path.buildPath))
 }
 
 exports.default = async (cb) =>{

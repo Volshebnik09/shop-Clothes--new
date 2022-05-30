@@ -32,6 +32,13 @@
     "gulp-sass-glob": "^1.1.0",
     "gulp-webp": "^4.0.1",
     "gulp-webpack": "^1.5.0",
-    "sass": "^1.51.0"
+    "sass": "^1.51.0",
+    "webpack": "^5.72.1",
+    "webpack-stream": "^7.0.0"
+  },
+  "dependencies": {
+    "@babel/preset-env": "^7.18.2",
+    "babel-loader": "^8.2.5",
+    "swiper": "^8.1.6"
   }
 }
