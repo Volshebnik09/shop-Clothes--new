@@ -6,7 +6,7 @@ const pug = require('gulp-pug');
 const webp = require('gulp-webp');
 const del = require('del');
 const autoprefixer = require('gulp-autoprefixer');
-const webpack = require('gulp-webpack');
+const webpack = require('webpack');
 const rename = require('gulp-rename');
 const minify = require('gulp-minify');
 
