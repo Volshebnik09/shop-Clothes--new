@@ -38,7 +38,7 @@ function transformPicture() {
     .pipe(dest(path.distPath+'/images'))
 }
 
-function buildJS() {
+function buildJS(cb) {
     return src('../src/pages/**/*.js')
         .pipe(webpackStream(
             require('../webpack.config.js')
@@ -48,6 +48,7 @@ function buildJS() {
             this.emit('end'); // Don't stop the rest of the task
         })
         .pipe(dest(path.distPath))
+    cb();
 }
 
 exports.default= (cb) =>{

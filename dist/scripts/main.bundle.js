@@ -33,10 +33,20 @@ eval("module.exports = function addEventsOnSearch(el) {\n  el.addEventListener('
 /*!*********************************!*\
   !*** ../src/pages/main/main.js ***!
   \*********************************/
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("var animateHeader = __webpack_require__(/*! ../../components/header__search/index.js */ \"../src/components/header__search/index.js\");\n\nvar activateHeaderPopup = __webpack_require__(/*! ../../components/header__popup-menu/index.js */ \"../src/components/header__popup-menu/index.js\");\n\n__webpack_require__(/*! ../../sections/main__production/index.js */ \"../src/sections/main__production/index.js\");\n\nanimateHeader(document.querySelector('.header__search'));\nactivateHeaderPopup();\n\n//# sourceURL=webpack:///../src/pages/main/main.js?");
+
+/***/ }),
+
+/***/ "../src/sections/main__production/index.js":
+/*!*************************************************!*\
+  !*** ../src/sections/main__production/index.js ***!
+  \*************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ \"../node_modules/swiper/swiper.esm.js\");\nvar animateHeader = __webpack_require__(/*! ../../components/header__search/index.js */ \"../src/components/header__search/index.js\");\n\nvar activateHeaderPopup = __webpack_require__(/*! ../../components/header__popup-menu/index.js */ \"../src/components/header__popup-menu/index.js\");\n\nanimateHeader(document.querySelector('.header__search'));\nactivateHeaderPopup();\n\n\n//# sourceURL=webpack:///../src/pages/main/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ \"../node_modules/swiper/swiper.esm.js\");\n // init Swiper:\n\nvar swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__[\"default\"](\".main__production__slider\", {\n  modules: [swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_0__.Pagination],\n  pagination: {\n    el: \".main__production__slider-controlls__status\",\n    type: \"fraction\"\n  },\n  navigation: {\n    nextEl: \".main__production__slider-controlls__to-right\",\n    prevEl: \".main__production__slider-controlls__to-left\"\n  },\n  slidesPerView: 'auto',\n  spaceBetween: 38,\n  // loop:true,\n  autoplay: {\n    delay: 1000,\n    disableOnInteraction: false\n  },\n  breakpoints: {\n    768: {\n      spaceBetween: 50\n    }\n  }\n}); // console.log(swiper.$wrapperEl)\n// swiper.slideNext();\n\n//# sourceURL=webpack:///../src/sections/main__production/index.js?");
 
 /***/ }),
 

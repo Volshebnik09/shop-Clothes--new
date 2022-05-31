@@ -1,0 +1,36 @@
+mixin slider-item()
+	.main__production__slider__item.swiper-slide
+		block
+
+section.main__production
+	.container
+		.main__production__big-picture
+			img(src="images/sections/main__production/images/big-img.webp")
+		.main__production__title
+			| Помимо готовой продукции высокого качества, мы можем для Вас произвести одежду, аксессуры, вкусности и другое под заказ.
+		.main__production__sub-title
+			| Благодаря личному производству мы изготавливаем большие партии в короткие сроки, а так же у Вас всегда есть возможность кастомизировать изделия.
+		.main__production__slider.swiper
+			.swiper-wrapper
+				+slider-item()
+					img(src="images/sections/main__production/images/small-placeholder.webp")
+				+slider-item()
+					img(src="images/sections/main__production/images/small-placeholder.webp")
+				+slider-item()
+					img(src="images/sections/main__production/images/small-placeholder.webp")
+				+slider-item()
+					img(src="images/sections/main__production/images/small-placeholder.webp")
+				+slider-item()
+					img(src="images/sections/main__production/images/small-placeholder.webp")
+				+slider-item()
+					img(src="images/sections/main__production/images/small-placeholder.webp")
+				+slider-item()
+					img(src="images/sections/main__production/images/small-placeholder.webp")
+				+slider-item()
+					img(src="images/sections/main__production/images/small-placeholder.webp")
+		.main__production__slider-controlls
+			.main__production__slider-controlls__to-left
+				include images/to-left.svg
+			.main__production__slider-controlls__status
+			.main__production__slider-controlls__to-right
+				include images/to-right.svg
