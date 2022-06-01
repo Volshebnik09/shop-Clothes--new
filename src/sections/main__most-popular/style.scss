@@ -106,6 +106,21 @@
 @media (max-width: 768px){
 	.main__most-popular {
 		.container {
+		.main__most-popular__block-content {
+			display: flex;
+			justify-content:center;
+		}
+		.main__most-popular-block:nth-child(5) a{
+			justify-content:flex-end;
+		}
+		.main__most-popular-block:nth-child(6) a{
+			justify-content:flex-start;
+		}
+		.main__most-popular__block-content img {
+			min-height: 100%;
+			width: auto;
+		}
+		max-height: 800px;
 		padding-top: 100px;
 		padding-bottom: 100px;
 		grid-template-columns: 1fr 1fr; 
