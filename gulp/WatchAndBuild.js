@@ -39,7 +39,7 @@ function transformPicture() {
 }
 
 function buildJS(cb) {
-    return src('../src/pages/**/*.js')
+    return src('../src/[pages,template]/**/*.js')
         .pipe(webpackStream(
             require('../webpack.config.js')
         ))
