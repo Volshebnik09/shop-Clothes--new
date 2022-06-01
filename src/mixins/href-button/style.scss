@@ -10,6 +10,8 @@
   line-height: 140%;
   white-space: nowrap;
   display: inline-block;
+  outline: none;
+  border: none;
 }
 .href-button--blue--mixin {
   background: $active;
