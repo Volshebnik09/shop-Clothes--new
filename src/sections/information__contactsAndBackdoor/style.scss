@@ -1,0 +1,106 @@
+.information__cantactsAndBackdoor {
+  .container {
+    display: flex;
+    gap: 100px;
+    flex-wrap: wrap;
+    .information__cantacts{
+      .information__cantacts__title{
+        height: 50px;
+        @include h2();
+        display: flex;
+        gap: 10px;
+      }
+      .information__cantacts__email{
+        @include simpleText;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 103%;
+        color: #272525;
+      }
+      .information__cantacts__phone {
+        @include simpleText;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 37px;
+
+        /* identical to box height */
+
+        /* main black */
+        color: #272525;
+      }
+    }
+    .information__backdoor{
+      display: grid;
+      grid-gap: 0 20px;
+      grid-template-columns: 0.4fr;
+      grid-template-areas:
+              "title title"
+              'text form';
+      .information__backdoor__title{
+        height: 50px;
+        @include h2();
+        grid-area: title;
+      }
+      .information__backdoor__text{
+        grid-area: text;
+        @include simpleText;
+
+
+        color: #222227;
+      }
+      form {
+        grid-area: form;
+        display: flex;
+        flex-direction: column;
+        width: 336px;
+        align-items: center;
+        button {
+          width: 280px;
+          margin-top: 20px;
+        }
+        input {
+          @include simpleText;
+
+          width: 336px;
+          background: transparent;
+          border: none;
+          outline: none;
+          padding-bottom: 10px;
+          border-bottom: 1px solid #272525;
+          +input{
+            margin: 20px 0 0 0;
+
+          }
+        }
+      }
+    }
+
+
+
+  }
+}
+@media (max-width: 1300px){
+  .information__cantactsAndBackdoor{
+    .container{
+      .information__backdoor{
+        grid-template-columns: 0.5fr 0.5fr;
+      }
+    }
+  }
+}
+@media (max-width: 768px){
+  .information__cantactsAndBackdoor{
+    .container{
+      gap: 10px;
+      .information__backdoor{
+        .information__backdoor__text{
+          max-width: 480px;
+        }
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+  }
+}
