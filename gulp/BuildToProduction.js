@@ -51,7 +51,7 @@ function transformPicture() {
 function buildJS() {
     return src('../src/pages/**/*.js')
         .pipe(webpackStream(
-            require('../webpack.config.js')
+            require('../webpack.config.build.js')
         ))
         .on('error', function (err) {
             console.error('WEBPACK ERROR', err);
