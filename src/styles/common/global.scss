@@ -14,7 +14,9 @@ img {
   max-width: 100%;
   user-select:none;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 a {
   text-decoration: none;
 }

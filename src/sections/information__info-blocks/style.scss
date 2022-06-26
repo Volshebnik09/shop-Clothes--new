@@ -1,0 +1,23 @@
+.information__info-blocks {
+  .information__info-block{
+    .information__info-block__title{
+      @include h3();
+      margin-bottom: 20px;
+    }
+    .information__info-block__content {
+      @include simpleText();
+    }
+    + .information__info-block {
+      margin-top: 30px;
+    }
+  }
+}
+@media (max-width: 1300px) {
+  .information__info-blocks{
+    .information__info-block{
+      max-width: 905px;
+    }
+
+  }
+
+}

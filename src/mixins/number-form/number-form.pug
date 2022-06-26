@@ -1,5 +1,5 @@
 mixin number-form(action='#')
     form.number-form(action=action)
-        input(type='tel' placeholder="Номер телефона")
+        input(type='tel' placeholder="Номер телефона" pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}")
         button(type="submit")
             include images/Group 6.svg

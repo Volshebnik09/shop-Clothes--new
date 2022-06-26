@@ -1,0 +1,23 @@
+section.information__cantactsAndBackdoor
+    .container
+        .information__cantacts
+            a(name='contacts')
+            h2.information__cantacts__title
+                | Контакты
+                include images/call.svg
+            .information__cantacts__email
+                | example@gmail.com
+            .information__cantacts__phone
+                | +380 630 130 103
+            +links-holder()
+        .information__backdoor
+            a(name='backdoor')
+            h2.information__backdoor__title
+                | Свяжитесь с нами
+            .information__backdoor__text
+                | Введите свои контактные данные, и наш менеджер свяжется с Вами
+            form.information__backdoor__form
+                input(placeholder='Ваше Имя')
+                input(placeholder='Ваша електронная почта')
+                input(placeholder='Ваш номер телефона')
+                +href-button('Заказать','btn')
