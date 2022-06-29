@@ -1,0 +1,11 @@
+- let navProdSection = ['Все товары', 'Толстовки', 'Свитшоты','Футболки','Поло','Жилетки','Рюкзаки','Бананки','Эко-сумки/Шопперы ','Пледы','Носки','Маски']
+
+
+section.allProducts__products
+    .container
+        ul.allProducts__products__navList
+            each val in navProdSection
+                li.allProducts__products__navItem
+                    a(href='#')
+                        =val
+
