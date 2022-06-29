@@ -43,7 +43,7 @@ function buildCSS (){
 function transformPicture() {
     return src(path.srcPath +'/**/*.{png,jpeg}')
         .pipe(webp({
-            method: 6,
+            method: 4,
         }))
         .pipe(dest(path.buildPath+'/images'))
 }
@@ -73,5 +73,6 @@ exports.default = async (cb) =>{
     buildCSS();
     buildJS();
     transformPicture();
+    copyJSON();
     cb();
 }
