@@ -7,16 +7,21 @@ var meta = document.createElement('meta');
 meta.name = "viewport";
 meta.content = "width=480";
 
+var meta__default = document.createElement('meta');
+meta__default.name = "viewport";
+meta__default.content = "width=device-width, initial-scale=1.0";
+
 document.body.onresize = () => {
     addMetaWidth();
 }
  
 addMetaWidth = () => {
     if (window.screen.width <= 480) {
+        if (!!meta__default) meta__default.remove() 
         document.querySelector('head').append(meta);
     } else {
-        console.log(123)
-        meta.remove()
+        if (!!meta) meta.remove()
+        document.querySelector('head').append(meta__default);
     }
 }
 

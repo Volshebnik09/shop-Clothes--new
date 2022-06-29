@@ -1,0 +1,35 @@
+.production__weCanCreate{
+	.production__weCanCreate__title {
+		@include h3
+	}
+	.production__weCanCreate__subtitle {
+		@include simpleText;
+		margin-bottom: 25px;
+	}
+	.production__weCanCreate__cards{
+		display: flex;
+		flex-wrap:wrap;
+		gap: 10px 5px;
+		align-items:center;
+	}
+	.production__weCanCreate__card {
+		margin: auto;
+		display: flex;
+		flex-direction:column;
+	}
+	.production__weCanCreate__card__title{
+		text-align: center;
+		@include simpleText;
+		margin-top: 20px;
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 105.5%;
+
+		/* or 25px */
+		text-align: center;
+
+		/* main black */
+		color: #272525;
+	}
+
+}
