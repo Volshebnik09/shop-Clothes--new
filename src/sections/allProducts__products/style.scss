@@ -3,21 +3,18 @@
   &__navList {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     position: relative;
   }
-  &__navItem a{
+  &__navItem {
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 105.5%;
-
-    text-align: center;
-
-    color: #8E8E8E;
-  }
-  &__navItem {
     position: relative;
+    text-align: center;
+    cursor: pointer;
+    color: #8E8E8E;
   }
   &__navList:before {
     content: '';
@@ -40,5 +37,11 @@
   }
   &__navItem:hover:before {
     background-color: #272525;
+  }
+  &__catalog {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(378px, 1fr));
+    grid-gap: 20px;
   }
 }

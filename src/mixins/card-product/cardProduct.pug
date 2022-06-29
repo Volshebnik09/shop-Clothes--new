@@ -1,0 +1,16 @@
+mixin cardProd(srcImg, listColor, name, price)
+    .card-product
+        .card-product__img
+            img(src=srcImg)
+        .card-product__info
+            h3.card-product__name
+                |#{name}
+            ul.card-product__color
+                each val in listColor
+                    li(style=`background-color:${val}`).card-product__color__item
+            p.card-product__price
+                |From Price <br>
+                |#{price}
+            .card-product__icon-basket
+                include ../../sections/allProducts__products/images/shopping-basket.svg
+
