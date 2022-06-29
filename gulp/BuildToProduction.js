@@ -59,6 +59,13 @@ function buildJS() {
         })
         .pipe(dest(path.buildPath))
 }
+function copyJSON(cb) {
+    return src(path.srcPath + '/pages/**/content/*.json')
+        .pipe(rename({
+            dirname:"",
+        }))
+        .pipe(dest(path.buildPath + "/content/"))
+}
 
 exports.default = async (cb) =>{
     await del(path.buildPath,{force:true});

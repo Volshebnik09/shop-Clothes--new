@@ -4,7 +4,7 @@ module.exports = {
   mode: 'development',
   entry: {
     // main: "../src/pages/main/main.js",
-    // information: "../src/pages/information/information.js",
+    information: "../src/pages/information/information.js",
     // layout:"../src/template/layout.js",
     // second: "../src/pages/second/second.js" пример подгрузки след. страницы
   },
