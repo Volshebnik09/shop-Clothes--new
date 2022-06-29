@@ -1,0 +1,49 @@
+.card-product {
+  width: 378px;
+  background-color: #FAFAFA;
+  box-shadow: 0 0 5px 1px #a29d9d;
+  &__img {
+    width: 100%;
+    height: auto;
+    background-color: #F1F1F8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__info {
+    padding: 10px;
+    position: relative;
+  }
+  &__name {
+    @include h5;
+  }
+  &__color {
+    display: flex;
+    align-items: center;
+
+  }
+  &__color__item {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #F1F1F8;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  &__price {
+    @include simpleText;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 105.5%;
+    color: #C4C4C4;
+  }
+  &__icon-basket {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    right: 13px;
+    bottom: 19px;
+  }
+
+}

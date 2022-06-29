@@ -1,4 +1,4 @@
-- let navProdSection = ['Все товары', 'Толстовки', 'Свитшоты','Футболки','Поло','Жилетки','Рюкзаки','Бананки','Эко-сумки/Шопперы ','Пледы','Носки','Маски']
+- let navProdSection = ['Все товары', 'Толстовки', 'Свитшоты','Футболки','Поло']
 
 
 section.allProducts__products
@@ -6,6 +6,18 @@ section.allProducts__products
         ul.allProducts__products__navList
             each val in navProdSection
                 li.allProducts__products__navItem
-                    a(href='#')
-                        =val
+                    =val
+        .allProducts__products__catalog
+            +cardProd('images/sections/allProducts__products/images/white-hudi.webp', ['#524983', '#309F85', '#F1F1F1'], 'EL003 Elleven Checkpoint-Friendly Compu-Backpack', '$76.43')
+            +cardProd('images/sections/allProducts__products/images/white-hudi.webp', ['#524983', '#309F85', '#F1F1F1'], 'EL003 Elleven Checkpoint-Friendly Compu-Backpack', '$76.43')
+            +cardProd('images/sections/allProducts__products/images/white-hudi.webp', ['#524983', '#309F85', '#F1F1F1'], 'EL003 Elleven Checkpoint-Friendly Compu-Backpack', '$76.43')
+            +cardProd('images/sections/allProducts__products/images/white-hudi.webp', ['#524983', '#309F85', '#F1F1F1'], 'EL003 Elleven Checkpoint-Friendly Compu-Backpack', '$76.43')
+            +cardProd('images/sections/allProducts__products/images/white-hudi.webp', ['#524983', '#309F85', '#F1F1F1'], 'EL003 Elleven Checkpoint-Friendly Compu-Backpack', '$76.43')
+            +cardProd('images/sections/allProducts__products/images/white-hudi.webp', ['#524983', '#309F85', '#F1F1F1'], 'EL003 Elleven Checkpoint-Friendly Compu-Backpack', '$76.43')
+            +cardProd('images/sections/allProducts__products/images/white-hudi.webp', ['#524983', '#309F85', '#F1F1F1'], 'EL003 Elleven Checkpoint-Friendly Compu-Backpack', '$76.43')
+            +cardProd('images/sections/allProducts__products/images/white-hudi.webp', ['#524983', '#309F85', '#F1F1F1'], 'EL003 Elleven Checkpoint-Friendly Compu-Backpack', '$76.43')
+        .allProducts__products__switch-btn-catalog
+            button.allProducts__products__switch-btn-catalog__btn
+                img(src='images/sections/allProducts__products/images/btn-prev-catalog.webp')
+                ul.allProducts__products__numbers-pages
 
