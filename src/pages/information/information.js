@@ -1,4 +1,4 @@
-require('../../sections/information__FAQ/index')
+	require('../../sections/information__FAQ/index')
 
 let id_product = 321;
 let qty_product = 2; 
@@ -76,4 +76,6 @@ function f(i) {
 
 	document.querySelector('.information__cantacts__email').innerHTML = data['FAQ']['contacts']['mail']
 	document.querySelector('.information__cantacts__phone').innerHTML = data['FAQ']['contacts']['number']
+	require('../../sections/information__FAQ/index')
+
 } 
