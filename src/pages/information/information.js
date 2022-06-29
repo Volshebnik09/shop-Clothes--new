@@ -4,6 +4,7 @@ let id_product = 321;
 let qty_product = 2; 
 let answer = {};
 
+console.log(123)
 // Первым аргументом кладем путь, + строку как и в любом другом запросе, ключ=значение&ключ=значение 
 fetch('./content/information.json',
  
