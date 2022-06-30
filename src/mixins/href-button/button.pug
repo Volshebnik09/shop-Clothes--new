@@ -1,6 +1,6 @@
-mixin href-button(name='href-button',type="a",action="#", href="#")
+mixin href-button(name)
     case type
         when 'btn'
-            button.href-button--green--mixin(class!=attributes.class action=action)=name
+            button.href-button--green--mixin(class!=attributes.class action=action )=name?name:"href-button"
         default
-            a.href-button--green--mixin(class!=attributes.class href=href)=name
+            a.href-button--green--mixin(class!=attributes.class href=href?href:"#")=name?name:"href-button"

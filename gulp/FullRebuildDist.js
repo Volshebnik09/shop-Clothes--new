@@ -23,7 +23,13 @@ function buildPug (cb) {
         .pipe(dest(path.distPath));
     cb();
 };
-
+function copyJSON(cb) {
+    return src(path.srcPath + '/pages/**/content/*.json')
+        .pipe(rename({
+            dirname:"",
+        }))
+        .pipe(dest(path.distPath + "/content/"))
+};
 function buildCSS (){
     return src(path.srcPath + '/styles/*.scss')
         .pipe(sassGlob())

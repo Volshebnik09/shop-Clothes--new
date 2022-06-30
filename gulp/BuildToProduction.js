@@ -43,7 +43,7 @@ function buildCSS (){
 function transformPicture() {
     return src(path.srcPath +'/**/*.{png,jpeg}')
         .pipe(webp({
-            method: 6,
+            method: 4,
         }))
         .pipe(dest(path.buildPath+'/images'))
 }
@@ -59,6 +59,13 @@ function buildJS() {
         })
         .pipe(dest(path.buildPath))
 }
+function copyJSON(cb) {
+    return src(path.srcPath + '/pages/**/content/*.json')
+        .pipe(rename({
+            dirname:"",
+        }))
+        .pipe(dest(path.buildPath + "/content/"))
+}
 
 exports.default = async (cb) =>{
     await del(path.buildPath,{force:true});
@@ -66,5 +73,6 @@ exports.default = async (cb) =>{
     buildCSS();
     buildJS();
     transformPicture();
+    copyJSON();
     cb();
 }

@@ -34,7 +34,9 @@ function buildCSS (){
 
 function transformPicture() {
     return src(path.srcPath +'/**/*.{png,jpeg}')
-    .pipe(webp())
+    .pipe(webp({
+        method: 2,
+    }))
     .pipe(dest(path.distPath+'/images'))
 }
 
@@ -51,13 +53,26 @@ function buildJS(cb) {
     cb();
 }
 
+
+function copyJSON(cb) {
+    return src(path.srcPath + '/pages/**/content/*.json')
+        .pipe(rename({
+            dirname:"",
+        }))
+        .pipe(dest(path.distPath + "/content/"))
+}
+
 exports.default= (cb) =>{
     buildPug();
     buildCSS();
     buildJS();
+    copyJSON();
+    transformPicture();
     watch(path.srcPath + '/**/*.pug',buildPug);
     watch(path.srcPath + '/**/*.scss',buildCSS);
     watch(path.srcPath +'/**/*.{png,jpeg}',transformPicture);
     watch(path.srcPath + '/**/*.js', buildJS)
+    watch(path.srcPath + '/pages/**/content/*.json', copyJSON)
+
     cb();
 }
