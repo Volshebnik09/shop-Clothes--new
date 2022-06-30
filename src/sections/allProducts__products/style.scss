@@ -52,11 +52,12 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(378px, 1fr));
     grid-gap: 20px;
+    justify-items: center;
   }
 
   &__switch-btn-catalog {
     position: absolute;
-    right: 0;
+    right: 35px;
     bottom: -60px;
     display: flex;
     align-items: center;
@@ -101,4 +102,8 @@
     cursor: pointer;
 
   }
+}
+@media (max-width: 820px) {
+
+
 }

@@ -29,7 +29,8 @@
         align-items: center;
         justify-content: space-between;
         flex-direction: column;
-        width: 632px;
+        max-width: 632px;
+        width: 100%;
     }
     &__prescreen__sweetShot {
         position: absolute;
@@ -41,7 +42,25 @@
 
     }
     &__prescreen__subtitle {
-        @include simpleText
+        @include simpleText;
+        font-size: 18px;
 
     }
+}
+@media (max-width: 1220px) {
+  .allProducts__prescreen__sweetShot {
+    right: -100px;
+    transform: scale(0.7);
+  }
+}
+@media (max-width: 1024px) {
+  .allProducts__prescreen__sweetShot {
+    bottom: 100px;
+    right: 0;
+    left: 0;
+  }
+  .allProducts__prescreen__container {
+    padding-top: 75px;
+    padding-bottom: 635px;
+  }
 }
