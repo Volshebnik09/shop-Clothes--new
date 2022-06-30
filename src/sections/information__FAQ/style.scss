@@ -15,6 +15,9 @@
       height: 14px;
       background: url('../images/sections/information__FAQ/images/arrow.webp');
     }
+    &:hover {
+      cursor: pointer;
+    }
   }
   .information__FAQ__card__content{
     @include simpleText;

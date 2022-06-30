@@ -1,7 +1,7 @@
 section.information__cantactsAndBackdoor
     .container
         .information__cantacts
-            a(name='contacts')
+            a(name='contacts' title='контакты')
             h2.information__cantacts__title
                 | Контакты
                 include images/call.svg
@@ -11,7 +11,7 @@ section.information__cantactsAndBackdoor
                 | +380 630 130 103
             +links-holder()
         .information__backdoor
-            a(name='backdoor')
+            a(name='backdoor' title="связь с нами" )
             h2.information__backdoor__title
                 | Свяжитесь с нами
             .information__backdoor__text
@@ -20,4 +20,4 @@ section.information__cantactsAndBackdoor
                 input(placeholder='Ваше Имя')
                 input(placeholder='Ваша електронная почта')
                 input(placeholder='Ваш номер телефона')
-                +href-button('Заказать','btn')
+                +href-button('Заказать',type='btn')
