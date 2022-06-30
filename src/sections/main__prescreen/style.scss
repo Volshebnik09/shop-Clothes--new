@@ -25,10 +25,11 @@
       z-index: 1;
     }
     position: relative;
-    padding-top: 324px;
+    padding-top: 304px;
     padding-bottom: 140px;
     @include h1();
     .main__prescreen__title {
+      font-size: 48px;
       max-width: 905px;
       font-weight: 900;
       letter-spacing: 0.01em;

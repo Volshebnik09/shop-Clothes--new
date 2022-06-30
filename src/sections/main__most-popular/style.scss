@@ -44,7 +44,7 @@
 			height: 100%;
 		}
 	}
-	.main__most-popular__title{
+	.main__most-popular__title span{
 		@include h2();
 		position: relative;
 		.main__most-popular__title__star {
