@@ -1,3 +1,4 @@
+require('../../sections/allProducts__products/popupProd.js');
 const numbersPages = document.querySelector('.allProducts__products__numbers-pages');
 const listNumbers = document.querySelectorAll('.allProducts__products__numbers-pages__item');
 numbersPages.addEventListener('click', (e) => {

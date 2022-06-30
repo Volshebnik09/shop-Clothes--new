@@ -1,5 +1,5 @@
-mixin cardProd(srcImg, listColor, name, price)
-    .card-product
+mixin cardProd(srcImg, listColor, name, price, idPopup)
+    .card-product(id=idPopup)
         .card-product__img
             img(src=srcImg, alt='placeholder')
         .card-product__info
@@ -11,3 +11,5 @@ mixin cardProd(srcImg, listColor, name, price)
             p.card-product__price
                 |From Price <br>
                 |#{price}
+    .card-popup
+
