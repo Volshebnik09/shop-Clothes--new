@@ -3,4 +3,4 @@ mixin href-button(name)
         when 'btn'
             button.href-button--green--mixin(class!=attributes.class action=action )=name?name:"href-button"
         default
-            a.href-button--green--mixin(class!=attributes.class href=href?href:"#")=name?name:"href-button"
+            a.href-button--green--mixin(class!=attributes.class href=href?href:"#" title=title?title:'.')=name?name:"href-button"

@@ -2,30 +2,29 @@ header.header
     include  ../../components/header__popup-menu/header__popup-menu
     .container.header__container
         .header__top
-            a.header__logo(href='index')
+            a.header__logo(href='index' title="главная")
                 include images/logo.svg
             .header__right-side
                 include ../../components/header__search/search
-                +href-button('+380 630 130 103', href="information#contacts")
+                +href-button('+380 630 130 103', href="information#contacts", title="К контактам")
                 .header__popup-button
                     include images/🌈 COLOR.svg
-
     .header__bottom
         .container
             nav.header__nav
               ul.header__ul
                 li.header__li
-                    a(href="allProducts") Все товары
+                    a(href="allProducts" title="Все товары") Все товары
                     ul.header__subul
                         li.header__li
-                            a(href="allProducts#") Толстовка
+                            a(href="allProducts" title="Толстовка") Толстовка
                         li.header__li
-                            a(href="allProducts#") Свитшоты
+                            a(href="allProducts" title="Свитшоты") Свитшоты
                         li.header__li
-                            a(href="allProducts#") Футболки
+                            a(href="allProducts" title="Футболки") Футболки
                         li.header__li
-                            a(href="allProducts#") Поло
+                            a(href="allProducts" title="Поло") Поло
                 li.header__li
-                    a(href="production") Производство
+                    a(href="production" title="Производство") Производство
                 li.header__li
-                    a(href="information") Информация
+                    a(href="information" title="Информация") Информация
