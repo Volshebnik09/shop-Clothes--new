@@ -1,4 +1,4 @@
-require('../../sections/allProducts__products/popupProd.js');
+require('../../mixins/card-product/popupProd.js');
 const numbersPages = document.querySelector('.allProducts__products__numbers-pages');
 const listNumbers = document.querySelectorAll('.allProducts__products__numbers-pages__item');
 numbersPages.addEventListener('click', (e) => {
@@ -13,6 +13,7 @@ numbersPages.addEventListener('click', (e) => {
         e.target.classList.add('allProducts__products__numbers-pages__item__active');
     }
 })
+
 
 
 
