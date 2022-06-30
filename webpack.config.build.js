@@ -6,6 +6,7 @@ module.exports = {
         main: "../src/pages/main/main.js",
         information: "../src/pages/information/information.js",
         layout:"../src/template/layout.js",
+        allProducts: "../src/pages/allProducts/allProducts.js",
         // second: "../src/pages/second/second.js" пример подгрузки след. страницы
     },
     module: {

@@ -1,11 +1,11 @@
 .allProducts{
     position: relative;
     overflow: hidden;
-    &__container {
+    &__prescreen__container {
         position: relative;
         padding-top: 324px;
         padding-bottom: 440px;
-        margin: 0 20px;
+
     }
     &__prescreen__bg{
       z-index: -1;
@@ -34,7 +34,7 @@
     &__prescreen__sweetShot {
         position: absolute;
         right: 0;
-        bottom: 166px;
+        bottom: 300px;
     }
     &__prescreen__title {
         @include h1()

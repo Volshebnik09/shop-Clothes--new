@@ -1,8 +1,7 @@
 - let navProdSection = ['Все товары', 'Толстовки', 'Свитшоты','Футболки','Поло']
 
-
 section.allProducts__products
-    .container
+    .container.allProducts__products__container
         ul.allProducts__products__navList
             each val in navProdSection
                 li.allProducts__products__navItem
@@ -18,6 +17,16 @@ section.allProducts__products
             +cardProd('images/sections/allProducts__products/images/white-hudi.webp', ['#524983', '#309F85', '#F1F1F1'], 'EL003 Elleven Checkpoint-Friendly Compu-Backpack', '$76.43')
         .allProducts__products__switch-btn-catalog
             button.allProducts__products__switch-btn-catalog__btn
-                img(src='images/sections/allProducts__products/images/btn-prev-catalog.webp')
-                ul.allProducts__products__numbers-pages
-
+               include images/btn-prev-catalog.svg
+            ol.allProducts__products__numbers-pages
+                - let n = 1
+                while n <= 5
+                    if n === 1
+                        li.allProducts__products__numbers-pages__item.allProducts__products__numbers-pages__item__active
+                            =n
+                    else
+                        li.allProducts__products__numbers-pages__item
+                            =n
+                    n++
+            button.allProducts__products__switch-btn-catalog__btn
+                include images/btn-next-catalog.svg

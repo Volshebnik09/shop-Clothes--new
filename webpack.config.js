@@ -7,6 +7,7 @@ module.exports = {
     // information: "../src/pages/information/information.js",
     // layout:"../src/template/layout.js",
     // second: "../src/pages/second/second.js" пример подгрузки след. страницы
+    allProducts: "../src/pages/allProducts/allProducts.js",
   },
   module: {
     rules: [{
