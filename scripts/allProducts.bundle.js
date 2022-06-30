@@ -15,7 +15,7 @@
   \***********************************************/
 /***/ (() => {
 
-eval("var numbersPages = document.querySelector('.allProducts__products__numbers-pages');\nvar listNumbers = document.querySelectorAll('.allProducts__products__numbers-pages__item');\nnumbersPages.addEventListener('click', function (e) {\n  listNumbers.forEach(function (el) {\n    if (el.classList.contains('allProducts__products__numbers-pages__item__active') && e.target !== el) {\n      el.classList.remove('allProducts__products__numbers-pages__item__active');\n    }\n  });\n\n  if (e.target.classList.contains('allProducts__products__numbers-pages__item')) {\n    e.target.classList.add('allProducts__products__numbers-pages__item__active');\n  }\n});\n\n//# sourceURL=webpack:///../src/pages/allProducts/allProducts.js?");
+eval("var numbersPages = document.querySelector('.allProducts__products__numbers-pages');\nvar listNumbers = document.querySelectorAll('.allProducts__products__numbers-pages__item');\nnumbersPages.addEventListener('click', function (e) {\n  listNumbers.forEach(function (el) {\n    if (el.classList.contains('allProducts__products__numbers-pages__item__active') && e.target !== el && e.target !== numbersPages) {\n      el.classList.remove('allProducts__products__numbers-pages__item__active');\n    }\n  });\n\n  if (e.target.classList.contains('allProducts__products__numbers-pages__item')) {\n    e.target.classList.add('allProducts__products__numbers-pages__item__active');\n  }\n});\n\n//# sourceURL=webpack:///../src/pages/allProducts/allProducts.js?");
 
 /***/ })
 
