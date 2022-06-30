@@ -62,17 +62,28 @@ function copyJSON(cb) {
         .pipe(dest(path.distPath + "/content/"))
 }
 
+function copyRobotsAndSiteMap(){
+    return src(path.srcPath + '/template/config/*')
+        .pipe(rename({
+            dirname:"",
+        }))
+        .pipe(dest(path.distPath))
+}
 exports.default= (cb) =>{
     buildPug();
     buildCSS();
     buildJS();
     copyJSON();
     transformPicture();
+    copyRobotsAndSiteMap()
     watch(path.srcPath + '/**/*.pug',buildPug);
     watch(path.srcPath + '/**/*.scss',buildCSS);
     watch(path.srcPath +'/**/*.{png,jpeg}',transformPicture);
     watch(path.srcPath + '/**/*.js', buildJS)
     watch(path.srcPath + '/pages/**/content/*.json', copyJSON)
+    watch(path.srcPath + '/template/config/*', copyRobotsAndSiteMap)
+
+
 
     cb();
 }

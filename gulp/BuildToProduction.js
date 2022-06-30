@@ -66,6 +66,13 @@ function copyJSON(cb) {
         }))
         .pipe(dest(path.buildPath + "/content/"))
 }
+function copyRobotsAndSiteMap(){
+    return src(path.srcPath + '/template/config/*')
+        .pipe(rename({
+            dirname:"",
+        }))
+        .pipe(dest(path.distPath))
+}
 
 exports.default = async (cb) =>{
     await del(path.buildPath,{force:true});
@@ -74,5 +81,6 @@ exports.default = async (cb) =>{
     buildJS();
     transformPicture();
     copyJSON();
+    copyRobotsAndSiteMap();
     cb();
 }

@@ -23,6 +23,13 @@ function buildPug (cb) {
         .pipe(dest(path.distPath));
     cb();
 };
+function copyRobotsAndSiteMap(){
+    return src(path.srcPath + '/template/config/*')
+        .pipe(rename({
+            dirname:"",
+        }))
+        .pipe(dest(path.distPath))
+}
 function copyJSON(cb) {
     return src(path.srcPath + '/pages/**/content/*.json')
         .pipe(rename({
@@ -63,5 +70,6 @@ exports.default= async(cb) =>{
     buildCSS();
     buildJS();
     transformPicture();
+    copyRobotsAndSiteMap();
     cb();
 }
