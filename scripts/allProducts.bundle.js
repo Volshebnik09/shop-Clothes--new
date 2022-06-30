@@ -13,20 +13,54 @@
 /*!***********************************************!*\
   !*** ../src/pages/allProducts/allProducts.js ***!
   \***********************************************/
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("__webpack_require__(/*! ../../sections/allProducts__products/popupProd.js */ \"../src/sections/allProducts__products/popupProd.js\");\n\nvar numbersPages = document.querySelector('.allProducts__products__numbers-pages');\nvar listNumbers = document.querySelectorAll('.allProducts__products__numbers-pages__item');\nnumbersPages.addEventListener('click', function (e) {\n  listNumbers.forEach(function (el) {\n    if (el.classList.contains('allProducts__products__numbers-pages__item__active') && e.target !== el && e.target !== numbersPages) {\n      el.classList.remove('allProducts__products__numbers-pages__item__active');\n    }\n  });\n\n  if (e.target.classList.contains('allProducts__products__numbers-pages__item')) {\n    e.target.classList.add('allProducts__products__numbers-pages__item__active');\n  }\n});\n\n//# sourceURL=webpack:///../src/pages/allProducts/allProducts.js?");
+
+/***/ }),
+
+/***/ "../src/sections/allProducts__products/popupProd.js":
+/*!**********************************************************!*\
+  !*** ../src/sections/allProducts__products/popupProd.js ***!
+  \**********************************************************/
 /***/ (() => {
 
-eval("var numbersPages = document.querySelector('.allProducts__products__numbers-pages');\nvar listNumbers = document.querySelectorAll('.allProducts__products__numbers-pages__item');\nnumbersPages.addEventListener('click', function (e) {\n  listNumbers.forEach(function (el) {\n    if (el.classList.contains('allProducts__products__numbers-pages__item__active') && e.target !== el && e.target !== numbersPages) {\n      el.classList.remove('allProducts__products__numbers-pages__item__active');\n    }\n  });\n\n  if (e.target.classList.contains('allProducts__products__numbers-pages__item')) {\n    e.target.classList.add('allProducts__products__numbers-pages__item__active');\n  }\n});\n\n//# sourceURL=webpack:///../src/pages/allProducts/allProducts.js?");
+eval("var cards = document.querySelectorAll('.card-product');\nvar cardPopups = Array.from(document.querySelectorAll('.card-popup'));\ncards.forEach(function (card, index) {\n  var img_card = card.querySelector('.card-product__img');\n  img_card.addEventListener('click', function (e) {\n    cardPopups[index].style.display = 'fixed';\n  });\n});\n\n//# sourceURL=webpack:///../src/sections/allProducts__products/popupProd.js?");
 
 /***/ })
 
 /******/ 	});
 /************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			// no module.id needed
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/************************************************************************/
 /******/ 	
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = {};
-/******/ 	__webpack_modules__["../src/pages/allProducts/allProducts.js"]();
+/******/ 	var __webpack_exports__ = __webpack_require__("../src/pages/allProducts/allProducts.js");
 /******/ 	
 /******/ })()
 ;
