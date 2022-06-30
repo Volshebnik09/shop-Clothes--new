@@ -71,7 +71,7 @@ function copyRobotsAndSiteMap(){
         .pipe(rename({
             dirname:"",
         }))
-        .pipe(dest(path.distPath))
+        .pipe(dest(path.buildPath))
 }
 
 exports.default = async (cb) =>{
