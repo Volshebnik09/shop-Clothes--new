@@ -27,7 +27,6 @@
     "del": "^6.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
-    "gulp-copy": "^4.0.1",
     "gulp-minify": "^3.1.0",
     "gulp-pug": "^5.0.0",
     "gulp-rename": "^2.0.0",
@@ -39,6 +38,7 @@
     "webpack-stream": "^7.0.0"
   },
   "dependencies": {
+    "scrollreveal": "^4.0.9",
     "swiper": "^8.1.6"
   }
 }

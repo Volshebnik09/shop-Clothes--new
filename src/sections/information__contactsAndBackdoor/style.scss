@@ -52,6 +52,7 @@
       form {
         grid-area: form;
         display: flex;
+        gap:10px;
         flex-direction: column;
         width: 336px;
         align-items: center;

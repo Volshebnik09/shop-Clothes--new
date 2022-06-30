@@ -1,11 +1,9 @@
-	require('../../sections/information__FAQ/index')
 
 let id_product = 321;
 let qty_product = 2; 
 let answer = {};
 
-console.log(123)
-// Первым аргументом кладем путь, + строку как и в любом другом запросе, ключ=значение&ключ=значение 
+// Первым аргументом кладем путь, + строку как и в любом другом запросе, ключ=значение&ключ=значение
 fetch('./content/information.json',
  
 // Второй аргумент это объект с указаниями, методаи заголовка 
@@ -22,7 +20,7 @@ fetch('./content/information.json',
     return response.json()
 })
 .then(i => f(i))
-.catch(() => console.log('ошибка'));  
+.catch(() => d());
 
 function f(i) {
 	let data = i
@@ -77,5 +75,9 @@ function f(i) {
 	document.querySelector('.information__cantacts__email').innerHTML = data['FAQ']['contacts']['mail']
 	document.querySelector('.information__cantacts__phone').innerHTML = data['FAQ']['contacts']['number']
 	require('../../sections/information__FAQ/index')
-
 } 
+
+function d() {
+	console.log('ERROR')
+	require('../../sections/information__FAQ/index')
+}

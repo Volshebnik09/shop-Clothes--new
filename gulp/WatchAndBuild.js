@@ -7,7 +7,6 @@ const webpack = require('webpack');
 const webpackStream = require('webpack-stream');
 const webp = require('gulp-webp');
 const rename = require('gulp-rename');
-const gulpCopy = require('gulp-copy');
 var path2 = require('path');
 
 function buildPug (cb) {
@@ -35,7 +34,9 @@ function buildCSS (){
 
 function transformPicture() {
     return src(path.srcPath +'/**/*.{png,jpeg}')
-    .pipe(webp())
+    .pipe(webp({
+        method: 2,
+    }))
     .pipe(dest(path.distPath+'/images'))
 }
 
@@ -66,6 +67,7 @@ exports.default= (cb) =>{
     buildCSS();
     buildJS();
     copyJSON();
+    transformPicture();
     watch(path.srcPath + '/**/*.pug',buildPug);
     watch(path.srcPath + '/**/*.scss',buildCSS);
     watch(path.srcPath +'/**/*.{png,jpeg}',transformPicture);

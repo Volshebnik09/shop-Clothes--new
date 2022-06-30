@@ -138,10 +138,13 @@
 
 // animate
 .header__popup-menu {
-  top:-100%;
+  top:-200%;
   transition: 0.4s;
+  opacity: 0;
 }
 .header__popup-menu[active]{
   top:0;
   display: block;
+  opacity: 1;
+
 }
