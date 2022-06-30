@@ -3,7 +3,7 @@ import ScrollReveal from 'scrollreveal';
 
 const revealLeftDesktop = {
     origin : 'left',
-    delay    : 200,
+    delay    : 350,
     distance : '400px',
     easing   : 'ease-in-out',
     duration: 500,
@@ -13,7 +13,7 @@ const revealLeftDesktop = {
 
 const revealRightDesktop = {
     origin : 'right',
-    delay    : 200,
+    delay    : 350,
     distance : '400px',
     easing   : 'ease-in-out',
     duration: 500,
@@ -23,7 +23,7 @@ const revealRightDesktop = {
 };
 
 const revealDesktop = {
-    delay    : 200,
+    delay    : 400,
     distance : '0px',
     easing   : 'ease-in-out',
     duration: 700,
