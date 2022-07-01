@@ -9,7 +9,7 @@
 	.production__weCanCreate__cards{
 		display: flex;
 		flex-wrap:wrap;
-		gap: 10px 5px;
+		gap: 20px 5px;
 		align-items:center;
 	}
 	.production__weCanCreate__card {
@@ -17,6 +17,22 @@
 		display: flex;
 		flex-direction:column;
 		cursor: pointer;
+		.image-holder {
+			width: 350px;
+			height: 240px;
+			background: #d1d1d1;
+			border-radius: 25px;
+			overflow: hidden;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			opacity: 0.9;
+		}
+		img {
+			height: 90%;
+			max-width: 100%;
+
+		}
 	}
 	.production__weCanCreate__card__title{
 		text-align: center;
