@@ -1,17 +1,18 @@
 .card-product {
   width: 378px;
-  background-color: #FAFAFA;
   box-shadow: 0 0 5px 1px #a29d9d;
   overflow: hidden;
+  background-color: #F1F1F8;
   &__img {
     width: 100%;
-    height: auto;
-    background-color: #F1F1F8;
+    height: 473px;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: 1s all;
     cursor: pointer;
+    position: relative;
+    transform: scale(0.95);
   }
   &__img:hover {
     transform: scale(1.1);
@@ -79,6 +80,8 @@
   }
   &__img {
     border-radius: 15px;
+    max-width: 520px;
+    height: auto;
   }
   &__info {
     display: flex;

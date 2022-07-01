@@ -1,33 +1,32 @@
-mixin cardProd(srcImg, listColor, name, price, idPopup, imgPopup)
+mixin cardProd(srcImg, name, price, idPopup)
     .card-product(id=idPopup)
         img(src=srcImg, alt='placeholder').card-product__img
         .card-product__info
             h3.card-product__name
                 |#{name}
-            ul.list-colors
-                each val in listColor
-                    li(style=`background-color:${val}`).list-colors__item
+            //ul.list-colors
+            //    each val in listColor
+            //        li(style=`background-color:${val}`).list-colors__item
             p.card-product__price
                 |From Price <br>
                 |#{price}
     .card-popup
         .card-popup__block
             img(src='images/mixins/card-product/images/close-popup.webp').card-popup__close-btn
-            img(src=imgPopup, alt='placeholder').card-popup__img
+            img(src=srcImg, alt='placeholder').card-popup__img
             .card-popup__info
                 h3.card-popup__title
                     |#{name}
-                ul.list-colors
-                    each val in listColor
-                        li(style=`background-color:${val}`).list-colors__item
+                //ul.list-colors
+                //    each val in listColor
+                //        li(style=`background-color:${val}`).list-colors__item
                 .card-popup__price
                     |From Price <br>
                     |#{price}
                 .card-popup__text
-                    |This exclusive design has a designated laptop-only section that unfolds to lay flat on
-                    |the X-ray belt to increase your speed, convenience and
-                    |security. (Pens, Laptop and other devices shown are
-                    |not included)
+                    | Толстовка отлично держит форму после многочисленных стирок. Идеально подходит как
+                    | к джинсам, так и к спортивным брюкам. Толстовка
+                    | очень удобная, плотная и отлично садится на любую фигуру.
                 .card-popup__bottom-info
                     .card-popup__bottom-info__left
                         .card-popup__bottom-info__size
