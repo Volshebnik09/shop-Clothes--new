@@ -87,6 +87,12 @@
 			align-items:center;
 			justify-content:center;
 		}
+		&__slider-controlls__to-left {
+			cursor: pointer;
+		}
+		&__slider-controlls__to-right {
+			cursor: pointer;
+		}
 }
 
 @media (max-width: 1300px) and (min-width: 1001px){
