@@ -16,7 +16,7 @@
   \*********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var scrollreveal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! scrollreveal */ \"../node_modules/scrollreveal/dist/scrollreveal.es.js\");\n\nvar revealDesktop = {\n  origin: 'bottom',\n  delay: 50,\n  distance: '400px',\n  easing: 'ease-in-out',\n  duration: 1000,\n  scale: 0.5,\n  mobile: false\n};\n(0,scrollreveal__WEBPACK_IMPORTED_MODULE_0__[\"default\"])().reveal('.production__weCanCreate__card', revealDesktop);\n\n//# sourceURL=webpack:///../src/pages/production/production.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var scrollreveal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! scrollreveal */ \"../node_modules/scrollreveal/dist/scrollreveal.es.js\");\n\nvar revealDesktop = {\n  origin: 'bottom',\n  delay: 50,\n  distance: '400px',\n  easing: 'ease-in-out',\n  duration: 1000,\n  scale: 0.5\n};\n(0,scrollreveal__WEBPACK_IMPORTED_MODULE_0__[\"default\"])().reveal('.production__weCanCreate__card', revealDesktop);\n\n//# sourceURL=webpack:///../src/pages/production/production.js?");
 
 /***/ }),
 
