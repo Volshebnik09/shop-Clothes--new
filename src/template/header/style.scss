@@ -28,6 +28,7 @@
   .header__logo {
     @include h1();
     font-size: 40px;
+    line-height: 0;
   }
   .header__bottom {
     width: 100%;
