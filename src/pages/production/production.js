@@ -7,7 +7,6 @@ const revealDesktop = {
     easing   : 'ease-in-out',
     duration: 1000,
     scale: 0.5,
-    mobile: false,
 };
 
 ScrollReveal().reveal('.production__weCanCreate__card', revealDesktop);
