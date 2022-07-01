@@ -147,8 +147,8 @@
 				}
 				.main__unique-idea__lamp{
 					position: absolute;
-					right: 0%;
-					top:-10%;
+					right: -7%;
+					top: -8%;
 					transform: scale(0.7)
 				}
 				.main__unique-idea__line{
@@ -185,8 +185,8 @@
 				height: 100%;
 				.main__unique-idea__rocket-1 {
 					position: absolute;
-					top: 43%;
-					right: 53%;
+					top: 35%;
+					right: 43%;
 				 	transform: scale(0.5);
 				}
 				.main__unique-idea__rocket-2 {
@@ -235,26 +235,28 @@
 				height: 100%;
 				.main__unique-idea__rocket-1 {
 					position: absolute;
-					top: 19%;
-					right: 20%;
-				 	transform: scale(0.5);
+					top: 20%;
+					right: 14%;
+					left: 72%;
+					transform: scale(1);
 				}
 				.main__unique-idea__rocket-2 {
 					position: absolute;
-					top: 17%;
-					right: 70%;
-					transform: scale(0.5);
+					top: 21%;
+					right: 80%;
+					left: 4%;
+					transform: scale(1);
 				}
 				.main__unique-idea__lamp{
 					position: absolute;
-					right: 50%;
+					right: 32%;
 					top: 5%;
-					transform: scale(1) translateX(50%);
+					left: 25%;
 				}
 				.main__unique-idea__line{
 					position: absolute;
-					right: 45%;
-					top: 52%;
+					right: 47%;
+					top: 50%;
 					transform: scale(0.5);
 				}
 			}

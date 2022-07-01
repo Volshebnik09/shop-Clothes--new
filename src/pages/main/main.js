@@ -8,7 +8,6 @@ const revealLeftDesktop = {
     easing   : 'ease-in-out',
     duration: 500,
     scale: 0.7,
-    mobile: false,
 };
 
 const revealRightDesktop = {
@@ -18,7 +17,6 @@ const revealRightDesktop = {
     easing   : 'ease-in-out',
     duration: 500,
     scale: 0.7,
-    mobile: false,
 
 };
 
@@ -28,7 +26,6 @@ const revealDesktop = {
     easing   : 'ease-in-out',
     duration: 700,
     scale: 0.1,
-    mobile: false,
 };
 
 ScrollReveal().reveal('.main__most-popular__top', revealLeftDesktop);
